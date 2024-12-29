@@ -1,0 +1,296 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%; /* Ensure it takes full width */
+  height: 100%; /* Ensure it takes full height */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  width: 375px;
+  height: 812px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 81px 28px 40px 28px;
+}
+h1 {
+  color: #969696;
+  text-align: center;
+  font-family: "Libre Franklin";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px; /* 145.455% */
+  margin-bottom: 15px;
+}
+h1 span {
+  color: #15202a;
+  font-family: "Libre Franklin";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+p {
+  color: #15202a;
+  text-align: center;
+  font-family: "Libre Franklin";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 32px;
+}
+.company-logo {
+  margin-bottom: 32px;
+  width: 56px;
+}
+input {
+  width: 281px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 28px;
+  border: 1px solid #c2d3ff;
+  background: #fff;
+  box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0);
+  padding: 10px 32px;
+}
+.cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+input::placeholder {
+  color: #b8c7ed;
+  font-family: "Libre Franklin";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px; /* 166.667% */
+}
+
+button {
+  width: 282px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 28px;
+  background: #4c7bf3;
+  box-shadow: 0px 5px 10px 2px rgba(76, 123, 243, 0.23);
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-family: "Libre Franklin";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px; /* 133.333% */
+  margin-bottom: 72px;
+  cursor: pointer;
+}
+button:hover {
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  opacity: 0.804;
+}
+.db-illustration {
+  width: 319px;
+  margin-bottom: 132px;
+}
+.socail-and-copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 27px;
+}
+.socail-and-copyright span {
+  color: #969696;
+  font-family: "Libre Franklin";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.social {
+  display: flex;
+  gap: 12px;
+}
+.icon-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px; /* Adjust width and height for a balanced circle */
+  height: 32px;
+  border: 1px solid gray;
+  border-radius: 50%; /* Perfectly circular */
+  font-size: 16px; /* Adjust icon size as needed */
+  background-color: white;
+  color: #4c7bf3;
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  cursor: pointer;
+}
+.icon-social:hover {
+  background-color: #4c7bf3; /* Invert background color */
+  color: white; /* Invert stroke color */
+}
+.error-message {
+  color: #ff5466;
+  font-family: "Libre Franklin";
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 20px; /* 166.667% */
+  letter-spacing: 0.15px;
+  margin-top: 5px;
+  display: none;
+  justify-content: center;
+  width: 282px;
+}
+
+@media (min-width: 1024px) {
+  main {
+    width: 1440px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 400px 52px 400px;
+  }
+  h1 {
+    color: #969696;
+    text-align: center;
+    font-family: "Libre Franklin";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px; /* 145.455% */
+    margin-bottom: 16px;
+  }
+  h1 span {
+    color: #15202a;
+    font-family: "Libre Franklin";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+  }
+
+  p {
+    color: #15202a;
+    text-align: center;
+    font-family: "Libre Franklin";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-bottom: 40px;
+  }
+  .cta {
+    flex-direction: row;
+    align-items: start;
+    gap: 16px;
+  }
+  .company-logo {
+    margin-bottom: 40px;
+    width: 90px;
+  }
+  input {
+    width: 421px;
+    height: 56px;
+    flex-shrink: 0;
+    border-radius: 28px;
+    border: 1px solid #c2d3ff;
+    background: #fff;
+    box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0);
+    padding: 10px 32px;
+  }
+
+  input::placeholder {
+    color: #b8c7ed;
+    font-family: "Libre Franklin";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px; /* 166.667% */
+  }
+
+  button {
+    width: 200px;
+    height: 56px;
+    flex-shrink: 0;
+    border-radius: 28px;
+    background: #4c7bf3;
+    box-shadow: 0px 5px 10px 2px rgba(76, 123, 243, 0.23);
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-family: "Libre Franklin";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px; /* 133.333% */
+    margin-bottom: 94px;
+    cursor: pointer;
+  }
+  button:hover {
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    opacity: 0.804;
+  }
+  .db-illustration {
+    width: 640px;
+    margin-bottom: 72px;
+  }
+  .socail-and-copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 27px;
+  }
+  .socail-and-copyright span {
+    color: #969696;
+    font-family: "Libre Franklin";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-bottom: 52px;
+  }
+  .social {
+    display: flex;
+    gap: 12px;
+  }
+  .icon-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px; /* Adjust width and height for a balanced circle */
+    height: 32px;
+    border: 1px solid gray;
+    border-radius: 50%; /* Perfectly circular */
+    font-size: 16px; /* Adjust icon size as needed */
+    background-color: white;
+    color: #4c7bf3;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    cursor: pointer;
+  }
+  .icon-social:hover {
+    background-color: #4c7bf3; /* Invert background color */
+    color: white; /* Invert stroke color */
+  }
+  .error-message {
+    padding-left: 30px;
+    width: 421px;
+    justify-content: start;
+  }
+}
